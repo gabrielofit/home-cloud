@@ -1,0 +1,17 @@
+0 : fim do script, ocorreu tudo certo, nenhum erro ou exceção ocorreu
+1 -> 100 : erros relacionados aos dados enviados pelo usuário (isset, empty, ...)
+101 -> 200 : erros relacionados ao formato incorreto dos dados enviados pelo usuário (preg_match, ...)
+201 -> 300 : erros relacionados ao tratamento dos dados enviados pelo usuário (encriptação, ...)
+301 -> 400 : erros relacionados com o servidor (conexão com o banco de dados, execução de queries, ...)
+401 -> 500 : outros erros
+
+UTILIZAÇÃO
+
+[SCRIPT][MÉTODO][CÓDIGO]
+
+* SEMPRE USE AS TRÊS PRIMEIRAS LETRAS NA CONSTRUÇÃO DO CÓDIGO DE ERRO
+* SEMPRE USE LETRAS MAIÚSCULAS
+
+Exemplo:
+
+USRPOS301 -> [USR == Users.php][POS == método POST][300 == código relacionado à erros internos]

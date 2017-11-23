@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="content-type" content="text/html">
+		
+		<title>Cloud - Autenticação</title>
+		
+		<link href="../Styles/Authentication.css" rel="stylesheet">
+		
+		<script src="../Libraries/jQuery.js"></script>
+		
+		<script src="../Classes/Authentication.js"></script>
+	
+	</head>
+	
+	<body class="body" onload="OnReady()" onresize="OnResize()">
+		
+		<form id="body-signInForm" method="POST" action="https://127.0.0.1/Venus/Cloud/Rest/1.0/Controllers/Tokens.php">
+		
+			<samp>
+				<b>ENTRAR</b>
+			</samp>
+			<br>
+		
+			<samp>Email: </samp>
+			<input id="body-signInForm-email" name="email" type="email">
+			<br>
+			
+			<samp>Senha: </samp>
+			<input id="body-signInForm-password" name="password" type="password">
+			<br>
+			
+			<input id="body-signInForm-submit" type="submit" value="Entrar">
+			
+		
+		</form>
+		
+		<br>
+		<br>
+		
+		<form id="body-signUpForm" method="POST" action="https://127.0.0.1/Venus/Cloud/Rest/1.0/Controllers/Users.php">
+		
+			<samp>
+				<b>REGISTRAR</b>
+			</samp>
+			<br>
+		
+			<samp>Nome: </samp>
+			<input id="body-signUpForm-name" name="name" type="text">
+			<br>
+			
+			<samp>Sobrenome: </samp>
+			<input id="body-signUpForm-lastname" name="lastname" type="text">
+			<br>
+			
+			<samp>Nome de usuário: </samp>
+			<input id="body-signUpForm-username" name="username" type="text">
+			<br>
+			
+			<samp>Email: </samp>
+			<input id="body-signUpForm-email" name="email" type="email">
+			<br>
+			
+			<samp>Password: </samp>
+			<input id="body-signUpForm-password" name="password" type="password">
+			<br>
+			
+			<input id="body-signUpForm-submit" type="submit" value="Registrar">
+		
+		</form>
+		
+		<br>
+		<br>
+		
+		<samp>
+			<b>DEBUG</b>
+		</samp>
+		<br>
+		
+		<samp>
+			USER_TOKEN: <samp id="body-userToken"></samp>
+		</samp>
+		<br>
+
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
